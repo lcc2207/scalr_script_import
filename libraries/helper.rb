@@ -15,17 +15,3 @@ class Chef::Recipe::ENV
     body = File.read("#{ENV['WORKSPACE']}/#{ENV['SCRIPT_NAME']}").to_json
   end
 end
-
-# # recipes/accounts.rb
-# script_json.env = node.chef_environment
-#
-# script_json.new.settings
-
-# ruby_block 'format_script' do
-#   block do
-#     node.override['script_format']['script_id'] = ENV['SCRIPT_ID']
-#     node.override['script_format']['
-#     node.override['script_format']['script_body'] = File.read("#{ENV['WORKSPACE']}/#{ENV['SCRIPT_NAME']}").to_json
-#   end
-#   # notifies :create, 'template[/Users/lynncaldwell/tmp/scalr_scripts/test_script/script1.json]', :delayed
-# end
