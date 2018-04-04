@@ -8,7 +8,7 @@ class Chef::Recipe::ENV
   end
 
   def self.script_name
-     name = ENV['SCRIPT_NAME']
+    name = ENV['SCRIPT_NAME']
   end
 
   def self.script_body
